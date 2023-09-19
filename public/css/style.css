@@ -1,0 +1,13 @@
+.card-title{
+    height: 30px;
+    overflow: hidden;
+    font-size: 15px;
+}
+.card-text{
+    font-size: 14px;
+    height: 100px;
+    overflow: hidden;
+}
+.source{
+    font-size: 13px;
+}
