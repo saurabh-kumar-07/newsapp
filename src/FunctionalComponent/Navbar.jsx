@@ -55,9 +55,14 @@ export default function Navbar(props) {
                 }}>Entertainment</Link>
               </li>
               <li className="nav-item dropdown">
-                <a className="nav-link text-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Other
-                </a>
+              <button
+                    className="nav-link text-light dropdown-toggle btn btn-link"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Other
+                  </button>
                 <ul className="dropdown-menu">
                   <li><Link className="dropdown-item" to="/science" onClick={() => {
                     props.changeSearch('')
@@ -87,9 +92,14 @@ export default function Navbar(props) {
                 </ul>
               </li>
               <li className="nav-item dropdown">
-                <a className="nav-link text-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Language
-                </a>
+              <button
+                    className="nav-link text-light dropdown-toggle btn btn-link"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Language
+                  </button>
                 <ul className="dropdown-menu">
                   <li><button className="dropdown-item" onClick={() => props.changeLanguage('hi')}>Hindi</button></li>
                   <li><button className="dropdown-item" onClick={() => props.changeLanguage('en')}>English</button></li>
