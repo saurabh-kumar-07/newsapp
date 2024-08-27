@@ -28,7 +28,7 @@ export default function Home(props) {
   }
   useEffect(() => {
     getApiData()
-  },[props])
+  },[])
   return (
     <>
       <h5 className='bg-primary text-light text-center p-2 my-1 text-capitalize'>{props.search ? props.search : props.q} News Articles</h5>
