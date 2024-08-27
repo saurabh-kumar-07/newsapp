@@ -61,9 +61,14 @@ export default class Navbar extends Component {
                   }}>Entertainment</Link>
                 </li>
                 <li className="nav-item dropdown">
-                  <a className="nav-link text-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <button
+                    className="nav-link text-light dropdown-toggle btn btn-link"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
                     Other
-                  </a>
+                  </button>
                   <ul className="dropdown-menu">
                     <li><Link className="dropdown-item" to="/science" onClick={()=>{
                       this.props.changeSearch('')
@@ -93,9 +98,14 @@ export default class Navbar extends Component {
                   </ul>
                 </li>
                 <li className="nav-item dropdown">
-                  <a className="nav-link text-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <button
+                    className="nav-link text-light dropdown-toggle btn btn-link"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
                     Language
-                  </a>
+                  </button>
                   <ul className="dropdown-menu">
                     <li><button className="dropdown-item" onClick={() => this.props.changeLanguage('hi')}>Hindi</button></li>
                     <li><button className="dropdown-item" onClick={() => this.props.changeLanguage('en')}>English</button></li>
